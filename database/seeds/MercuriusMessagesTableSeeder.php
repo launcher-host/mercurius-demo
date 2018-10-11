@@ -26,9 +26,7 @@ class MercuriusMessagesTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS=0');
         DB::table('mercurius_messages')->truncate();
-        DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
         $ian = $this->getUser('ian@launcher.host');
         $noa = $this->getUser('noa@launcher.host');
