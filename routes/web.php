@@ -12,9 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('login');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/join-slack-launcher-host',[
+    'uses'=>'SlackInvitationController@slackPage',
+    'as'=>'slack-invitation'
+]);
+
+Route::post('/join-slack-launcher-host',[
+    'uses'=>'SlackInvitationController@sendInvitation',
+    'as'=>'slack-invitation'
+]);
