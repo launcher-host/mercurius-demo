@@ -894,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/launcher-host/mercurius.git",
-                "reference": "a8f5f35a96e5fb9fb7009a39bd8e1a844ad4b520"
+                "reference": "cc1ec8c39ce5bd1da065fd8591cfe3616c432811"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/launcher-host/mercurius/zipball/a8f5f35a96e5fb9fb7009a39bd8e1a844ad4b520",
-                "reference": "a8f5f35a96e5fb9fb7009a39bd8e1a844ad4b520",
+                "url": "https://api.github.com/repos/launcher-host/mercurius/zipball/cc1ec8c39ce5bd1da065fd8591cfe3616c432811",
+                "reference": "cc1ec8c39ce5bd1da065fd8591cfe3616c432811",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +952,7 @@
                 "vue",
                 "web-sockets"
             ],
-            "time": "2018-10-11T09:01:40+00:00"
+            "time": "2018-10-12T07:51:00+00:00"
         },
         {
             "name": "league/flysystem",
