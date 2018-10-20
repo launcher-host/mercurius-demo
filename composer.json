@@ -53,8 +53,8 @@
             "@composer mercurius:refresh"
         ],
         "mercurius:refresh": [
-            "@php artisan migrate:refresh",
-            "@php artisan db:seed --class=MercuriusDatabaseSeeder",
+            "@php artisan migrate:refresh --force",
+            "@php artisan db:seed --class=MercuriusDatabaseSeeder --force",
             "@php artisan vendor:publish --tag=mercurius-public --force"
         ]
     },
