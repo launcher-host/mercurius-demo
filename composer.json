@@ -50,6 +50,11 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
+        ],
+        "mercurius:refresh": [
+            "@php artisan migrate:refresh",
+            "@php artisan db:seed --class=MercuriusDatabaseSeeder",
+            "@php artisan vendor:publish --tag=mercurius-public --force"
         ]
     },
     "config": {
