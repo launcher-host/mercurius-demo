@@ -19,13 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Route::get('/join-slack-launcher-host',[
-    'uses'=>'SlackInvitationController@slackPage',
-    'as'=>'slack-invitation'
-]);
-
-Route::post('/join-slack-launcher-host',[
-    'uses'=>'SlackInvitationController@sendInvitation',
-    'as'=>'slack-invitation'
-]);
+Route::get('/join-slack-launcher-host', ['uses'=>'SlackInvitationController@slackPage'])->name('slack-invitation');
+Route::post('/join-slack-launcher-host',['uses'=>'SlackInvitationController@sendInvitation']);
+Route::get('/joined-slack-launcher-host', ['uses'=>'SlackInvitationController@slackJoined'])->name('slack-joined');

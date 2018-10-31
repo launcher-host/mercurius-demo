@@ -24,6 +24,14 @@ class SlackInvitationController extends Controller
     }
 
     /**
+     *  Joined Slack page.
+     */
+    public function slackJoined()
+    {
+        return view('slack-joined');
+    }
+
+    /**
      *  Send Slack Invitation.
      */
     public function sendInvitation(Request $request)
@@ -48,7 +56,7 @@ class SlackInvitationController extends Controller
                 ]
             ]);
 
-            return redirect()->back()->with('success', 'Your invitation was sent successfully to your mail.');
+            return redirect()->route('slack-joined');
 
         } catch (\Exception $e) {
             return redirect()->back()->with('error', $e->getMessage());
