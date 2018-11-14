@@ -54,7 +54,7 @@
         ],
         "mercurius:refresh": [
             "@php artisan migrate:refresh --force",
-            "@php artisan db:seed --class=MercuriusDatabaseSeeder --force",
+            "@php artisan db:seed --force",
             "@php artisan vendor:publish --tag=mercurius-public --force"
         ]
     },
